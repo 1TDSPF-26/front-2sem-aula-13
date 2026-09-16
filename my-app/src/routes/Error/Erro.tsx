@@ -1,11 +1,5 @@
 export default function Erro() {
+  document.title = "Erro";
 
-    document.title = "Erro 404"
-
-
-    return (
-        <footer>
-           <h2>404 - Pagina nao encontrada</h2>
-        </footer>
-    )
+  return <h2>404 - Página não encontrada</h2>;
 }

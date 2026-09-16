@@ -1,15 +1,15 @@
-import { Outlet } from 'react-router-dom'
-import Cabecalho from './components/Cabecalho/Cabecalho'
-import Conteudo from './components/Conteudo/Conteudo'
-import Rodape from './components/Rodape/Rodape'
-
+import Cabecalho from "./components/Cabecalho/Cabecalho";
+import ObservadorDeRota from "./components/ObservadorDeRota";
+import Rodape from "./components/Rodape/Rodape";
+import { Outlet } from "react-router";
 
 export default function App() {
   return (
-    <>
-      <Cabecalho />
+    <div>
+      <ObservadorDeRota />
+      <Cabecalho/>
       <Outlet/>
-      <Rodape />
-    </>
+      <Rodape/>
+    </div>
   )
 }
