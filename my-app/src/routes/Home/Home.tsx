@@ -32,7 +32,7 @@ export default function Home() {
       try {
         const response = await fetch("https://api.github.com/users");
       
-        if(response.ok) {
+        if(!response.ok) {
           throw new Error("Erro ao buscar os usuários");
         } 
 
@@ -44,7 +44,7 @@ export default function Home() {
       }
     }
 
-    // loadingData();
+    loadingData();
   }, []);
 
   return (
