@@ -58,7 +58,7 @@ export default function Home() {
       <div>
         <ul>
             {usuarios.map((u,i)=>(
-                    <li key={i}>{u.id} - {u.login} - <img src={u.avatar_url} alt={u.login} width={30} /></li>
+                    <li key={i}>{u.id} - {u.login} - <img src={u.avatar_url} alt={u.login} width={30}/></li>
             ))}
         </ul>
       </div>
